@@ -1,7 +1,0 @@
-package com.coffee.house.admin.user;
-
-import org.springframework.data.repository.PagingAndSortingRepository;
-
-public class UserRepository implements PagingAndSortingRepository<T, ID> {
-
-}

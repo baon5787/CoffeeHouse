@@ -1,6 +1,0 @@
-package com.coffee.house.admin.jwt;
-
-@Service
-public class JwtService {
-
-}
