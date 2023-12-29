@@ -1,0 +1,12 @@
+package com.coffee.house.models.entity;
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "users")
+public class UserToken {
+
+}

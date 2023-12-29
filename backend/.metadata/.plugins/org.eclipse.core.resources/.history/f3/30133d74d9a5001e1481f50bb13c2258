@@ -1,0 +1,10 @@
+package com.coffee.house.admin.user;
+
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+import com.coffee.house.models.entity.User;
+
+public class UserRepository implements PagingAndSortingRepository<User, Integer> {
+	
+	Optional<User> findByEmail(String email);
+}

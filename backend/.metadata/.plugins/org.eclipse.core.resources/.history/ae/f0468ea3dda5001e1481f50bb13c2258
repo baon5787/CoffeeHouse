@@ -1,0 +1,5 @@
+package com.coffee.house.models;
+
+public enum Gender {
+
+}

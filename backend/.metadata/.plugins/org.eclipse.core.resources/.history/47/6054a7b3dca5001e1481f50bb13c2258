@@ -1,0 +1,5 @@
+package com.coffee.house.admin.config;
+
+public class DataSourceConfig {
+
+}
