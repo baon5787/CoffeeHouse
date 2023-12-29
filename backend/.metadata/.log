@@ -4095,3 +4095,6 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-12-29 08:59:41.515
 !MESSAGE Classpath changed for project: coffee-house-admin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-12-29 09:11:25.979
+!MESSAGE Classpath changed for project: coffee-house-admin

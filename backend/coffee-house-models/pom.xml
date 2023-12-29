@@ -11,7 +11,7 @@
 	<groupId>com.coffee.house</groupId>
 	<artifactId>coffee-house-models</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>coffee-house-models</name>
+	<name>demo</name>
 	<description>Models</description>
 	<properties>
 		<java.version>11</java.version>
