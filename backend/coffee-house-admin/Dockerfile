@@ -1,7 +1,12 @@
-FROM eclipse-temurin:17-jdk-alpine
+FROM maven:3.8.2-jdk-17 AS build
+COPY . .
+RUN mvn clean package -DskipTests
 
-WORKDIR /app
-
-COPY target/coffee-house-admin-0.0.1-SNAPSHOT.jar /app/springboot-docker-demo.jar
-
-ENTRYPOINT ["java", "-jar", "springboot-docker-demo.jar"]
+#
+# Package stage
+#
+FROM openjdk:17-jdk-slim
+COPY --from=build /target/coffee-house-admin-0.0.1-SNAPSHOT.jar demo.jar
+# ENV PORT=8080
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","demo.jar"]
