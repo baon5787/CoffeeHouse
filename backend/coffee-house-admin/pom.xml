@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>com.coffee.house</groupId>
 			<artifactId>coffee-house-models</artifactId>
-			<version>${project.version}</version>
+			<version>${project.version}</version>	
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -51,10 +51,17 @@
 
 	<repositories>
 		<repository>
-			<id>coffee-house-models-0.0.1-SNAPSHOT</id>
-			<url>file:${project.basedir}/libs</url>
+			<id>JBoss</id>
+			<name>JBoss Repository</name>
+			<layout>default</layout>
+			<url>http://repository.jboss.org/maven2</url>
 		</repository>
-	</repositories>
+
+    <repository>
+       <id>my-local-repo</id>
+       <url>file://${basedir}/lib/repo</url>
+    </repository>
+</repositories>
 
 	<build>
 		<plugins>
