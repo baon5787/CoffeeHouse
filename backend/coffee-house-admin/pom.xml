@@ -50,15 +50,8 @@
 	</dependencies>
 
 	<repositories>
-		<repository>
-			<id>JBoss</id>
-			<name>JBoss Repository</name>
-			<layout>default</layout>
-			<url>http://repository.jboss.org/maven2</url>
-		</repository>
-
     <repository>
-       <id>my-local-repo</id>
+       <id>coffee-house-models-0.0.1-SNAPSHOT</id>
        <url>file://${basedir}/lib/repo</url>
     </repository>
 </repositories>
