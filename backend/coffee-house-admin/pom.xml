@@ -22,18 +22,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>com.coffee.house</groupId>
+			<artifactId>coffee-house-models</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>com.coffee.house</groupId>
-			<artifactId>coffee-house-models</artifactId>
-			<version>${project.version}</version>	
-			<scope>system</scope>
-    <systemPath>${project.basedir}/libs/coffee-house-models-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -62,6 +60,22 @@
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
+						<execution>
+                        <id>install-external-non-maven-jar</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>com.coffee.house</groupId>
+                            <artifactId>coffee-house-models</artifactId>
+                            <version>${project.version}</version>
+                            <file>${basedir}/libs/coffee-house-models-0.0.1-SNAPSHOT.jar</file>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
 					</excludes>
 				</configuration>
 			</plugin>
