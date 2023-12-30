@@ -1,16 +1,7 @@
-FROM ubuntu:latest AS build
+FROM eclipse-temurin:17-jdk-alpine
 
-RUN apt-get update
-RUN apt-get install openjdk-17-jdk -y
-COPY . .
+WORKDIR /app
 
-RUN apt-get install maven -y
-RUN mvn clean install 
+COPY target/coffee-house-admin-0.0.1-SNAPSHOT.jar /app/springboot-docker-demo.jar
 
-FROM openjdk:17-jdk-slim
-
-EXPOSE 8080
-
-COPY --from=build /target/coffee-house-admin-0.0.1-SNAPSHOT.jar app.jar
-
-ENTRYPOINT [ "java", "-jar", "app.jar" ]
+ENTRYPOINT ["java", "-jar", "springboot-docker-demo.jar"]
