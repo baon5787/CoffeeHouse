@@ -51,7 +51,7 @@
 
 	<repositories>
     <repository>
-       <id>coffee-house-models-0.0.1-SNAPSHOT</id>
+       <id>com.coffee.house:coffee-house-models:jar:0.0.1-SNAPSHOT</id>
        <url>${basedir}/libs/</url>
     </repository>
 </repositories>
