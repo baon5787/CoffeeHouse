@@ -52,7 +52,7 @@
 	<repositories>
     <repository>
        <id>coffee-house-models-0.0.1-SNAPSHOT</id>
-       <url>file://${basedir}/libs/</url>
+       <url>${basedir}/libs/</url>
     </repository>
 </repositories>
 
