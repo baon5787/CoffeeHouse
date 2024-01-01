@@ -51,9 +51,9 @@
 
 	<repositories>
 		<repository>
-			<id>github</id>
-			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/baon5787/coffee-house-models</url>
+			<id>mvn-repo</id>
+		  <name>baon5787</name>
+		  <url>https://maven.pkg.github.com/baon5787/coffee-house-models</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
