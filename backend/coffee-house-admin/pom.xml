@@ -22,16 +22,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+	
+		<dependency>
+			<groupId>com.coffee.house</groupId>
+			<artifactId>coffee-house-models</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>com.coffee.house</groupId>
-			<artifactId>coffee-house-models</artifactId>
-			<version>${project.version}</version>	
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -50,12 +50,16 @@
 	</dependencies>
 
 	<repositories>
-    <repository>
-       <id>com.coffee.house:coffee-house-models:jar:0.0.1-SNAPSHOT</id>
-       <url>${basedir}/libs/</url>
-    </repository>
-</repositories>
-
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/baon5787/coffee-house-models</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>		
+		</repository>
+	</repositories>
+	
 	<build>
 		<plugins>
 			<plugin>
