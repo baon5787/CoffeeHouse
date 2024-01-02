@@ -24,9 +24,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.coffee.house</groupId>
-			<artifactId>coffee-house-models</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.github.baon5787</groupId>
+			<artifactId>coffee-house-model</artifactId>
+			<version>main-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -51,15 +51,11 @@
 
 	<repositories>
 		<repository>
-			<id>mvn-repo</id>
-		  <name>baon5787</name>
-		  <url>https://maven.pkg.github.com/baon5787/coffee-house-models</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
-	
+
 
 	<build>
 		<plugins>
