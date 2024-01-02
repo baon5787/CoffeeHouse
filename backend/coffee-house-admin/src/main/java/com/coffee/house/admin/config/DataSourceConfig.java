@@ -12,9 +12,9 @@ public class DataSourceConfig {
 	@Bean 
     public DataSource getDataSource() {
         DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.url("jdbc:mysql://ue4uuqw7iic473ch:n2IiCoUdcRWUKcB4DDje@bfvtumeszmirowbkk6dc-mysql.services.clever-cloud.com:3306/bfvtumeszmirowbkk6dc");
-        dataSourceBuilder.username("ue4uuqw7iic473ch");
-        dataSourceBuilder.password("n2IiCoUdcRWUKcB4DDje");
+        dataSourceBuilder.url("jdbc:mysql://www.db4free.net:3306/coffeehouse");
+        dataSourceBuilder.username("nguyendinhbao");
+        dataSourceBuilder.password("nguyendinhbao");
         return dataSourceBuilder.build();
     }
 }
