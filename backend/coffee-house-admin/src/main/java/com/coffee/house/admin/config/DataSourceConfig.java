@@ -14,7 +14,7 @@ public class DataSourceConfig {
         DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.url("jdbc:mysql://ue4uuqw7iic473ch:n2IiCoUdcRWUKcB4DDje@bfvtumeszmirowbkk6dc-mysql.services.clever-cloud.com:3306/bfvtumeszmirowbkk6dc");
         dataSourceBuilder.username("ue4uuqw7iic473ch");
-        dataSourceBuilder.password("ue4uuqw7iic473ch");
+        dataSourceBuilder.password("n2IiCoUdcRWUKcB4DDje");
         return dataSourceBuilder.build();
     }
 }
